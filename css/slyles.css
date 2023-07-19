@@ -91,13 +91,38 @@ p {
 }
 
 .container {
-  width: 1158px;
+  min-width: 320px;
+  max-width: 468px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
+  outline: 2px solid tomato;
+  outline-offset: -2px;
 }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media only screen and (min-width: minwidthpx) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 /**
@@ -202,11 +227,10 @@ p {
   |============================
 */
 .hero {
-  /* max-width: 1440px; */
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  max-width: 468px;
   background-position: center;
   margin: 0 auto;
 
@@ -219,16 +243,50 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media only screen and (min-width: 1158px) {
+  .hero {
+    background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    background-position: center;
+    margin: 0 auto;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -268,16 +326,16 @@ p {
   padding: 0 auto;
 }
 .title-section {
-  /* margin-top: 8px; */
   margin-bottom: 8px;
 }
 .card-future {
-  display: flex;
-  gap: 24px;
+  /* display: flex;
+  gap: 24px; */
 }
-.card-future-item {
+/* .card-future-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
-}
+} */
+
 .future-container-icon {
   display: flex;
   align-items: center;
