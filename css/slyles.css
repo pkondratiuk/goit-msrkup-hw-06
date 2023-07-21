@@ -322,15 +322,19 @@ p {
 
 .section-future{
   padding-top: 0;
+  
 }
 
 .text-future {
   letter-spacing: 0.02em;
+  font-weight: 500;
   margin: 0 auto;
   padding: 0 auto;
 }
 .title-section {
   text-align: center;
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 8px;
 }
 .card-future {
@@ -358,22 +362,32 @@ p {
   | What doing
   |============================
 */
-.title-block {
-  text-transform: capitalize;
-  margin-bottom: 72px;
+.section-do{
+  display: none;
 }
 
-.card-do {
-  display: flex;
-  gap: 24px;
-}
-.card-do-item {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+@media only screen and (min-width: 1158px) {
+   .title-block {
+      text-transform: capitalize;
+      margin-bottom: 72px;
+    }
+  
+    .card-do {
+      display: flex;
+      gap: 24px;
+    }
+  
+    .card-do-item {
+      flex-basis: calc((100% - 2 * 24px) / 3);
+    }
+  
+    .section-do {
+      padding-top: 0;
+    }
+    
+  
 }
 
-.section-do {
-  padding-top: 0;
-}
 
 /**
   |============================
@@ -381,6 +395,7 @@ p {
   |============================
 */
 .team {
+  padding: 0 82px;
   background-color: #f4f4fd;
 }
 .title-team {
@@ -398,16 +413,22 @@ p {
 }
 
 .card-team {
-  display: flex;
-  gap: 24px;
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 72px; */
+  
 }
 
 .card-team-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  /* flex-basis: calc((100% - 3 * 24px) / 4); */
+  
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.card-team-item:not(:last-child){
+  margin-bottom: 72px;
 }
 
 .team-container {
