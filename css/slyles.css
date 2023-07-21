@@ -326,18 +326,20 @@ p {
   padding: 0 auto;
 }
 .title-section {
+  text-align: center;
   margin-bottom: 8px;
 }
 .card-future {
   /* display: flex;
   gap: 24px; */
 }
-/* .card-future-item {
+.card-future-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
-} */
+}
 
 .future-container-icon {
   display: flex;
+  visibility: hidden;
   align-items: center;
   justify-content: center;
   width: 264px;
