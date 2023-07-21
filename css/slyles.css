@@ -320,6 +320,10 @@ p {
   |============================
 */
 
+.section-future{
+  padding-top: 0;
+}
+
 .text-future {
   letter-spacing: 0.02em;
   margin: 0 auto;
