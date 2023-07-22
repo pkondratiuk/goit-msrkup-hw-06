@@ -246,9 +246,6 @@ p {
 }
 
 @media only screen and (min-width: 1158px) {
-  .header-container {
-    padding: 0 156px;
-  }
   .adress-container {
     display: flex;
     gap: 40px;
@@ -345,7 +342,7 @@ p {
     background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
-    max-width: 1558px;
+    max-width: 1158px;
     background-position: center;
     margin: 0 auto;
 
@@ -450,6 +447,9 @@ p {
 }
 
 @media only screen and (min-width: 1158px) {
+  .section-future {
+    padding-top: 120px;
+  }
   .text-future {
     letter-spacing: 0.02em;
     margin: 0 auto;
