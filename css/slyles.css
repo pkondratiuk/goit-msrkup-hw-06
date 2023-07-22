@@ -109,7 +109,7 @@ p {
 
 @media only screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -246,94 +246,20 @@ p {
 }
 
 @media only screen and (min-width: 1158px) {
-  .header {
-    border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  }
-
-  .web {
-    color: #4d5ae5;
-  }
-
-  .dark-studio {
-    color: #2e2f42;
-  }
-
-  .nav-list {
-    position: relative;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .nav-list.active::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-    bottom: -1px;
-  }
-  .active {
-    color: #404bbf;
-  }
-
-  .nav-list:hover,
-  .nav-list:focus {
-    color: #404bbf;
-  }
-  .adress {
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-  }
-
-  .adress-list {
-    color: #434455;
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .adress-list:hover,
-  .adress-list:focus {
-    color: #404bbf;
-  }
-
   .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 0 156px;
   }
-  .nav-container {
-    display: flex;
-    align-items: center;
-  }
-  .nav-list-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-
   .adress-container {
     display: flex;
-    align-items: center;
     gap: 40px;
   }
-  .logo-container {
-    margin-right: 76px;
+  .adress-email {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .adress-phone {
+    padding-bottom: 0;
   }
 }
 
@@ -419,7 +345,7 @@ p {
     background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
-    max-width: 1440px;
+    max-width: 15580px;
     background-position: center;
     margin: 0 auto;
 
@@ -518,9 +444,47 @@ p {
   .card-future-item {
     flex-basis: calc((100% - 2 * 24px) / 3);
   }
+  .text-future {
+    width: 356px;
+  }
 }
 
-/** |============================ | What doing |============================ */
+@media only screen and (min-width: 1158px) {
+  .text-future {
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+  }
+  .title-section {
+    /* margin-top: 8px; */
+    margin-bottom: 8px;
+  }
+  .card-future {
+    display: flex;
+    gap: 24px;
+  }
+  .card-future-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+  .future-container-icon {
+    display: flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+}
+
+/**
+  |============================
+  | What do
+  |============================
+*/
 @media screen and (min-width: 320px) and (max-width: 1157px) {
   .section-do {
     display: none;
@@ -572,23 +536,10 @@ p {
   background-color: #ffffff;
 }
 
-.card-team {
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 24px; */
-}
-
-.card-team-item {
-  /* flex-basis: calc((100% - 3 * 24px) / 4); */
-
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.card-team-item:not(:last-child) {
-  margin-bottom: 72px;
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .card-team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 .team-container {
@@ -625,6 +576,32 @@ p {
 }
 .social-item {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .card-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-left: 108px;
+  }
+
+  .card-team-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+  .title-team {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .list-team-social {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 /**
@@ -751,6 +728,7 @@ p {
 }
 
 .container-form {
+  max-width: 100%;
 }
 
 .footer-form {
@@ -822,6 +800,34 @@ p {
 
 .footer-btn-icon {
   margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer {
+    padding: 0 108px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: left;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 0;
+    gap: 24px;
+  }
+  .text-footer-social {
+    margin-top: 0;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
 }
 
 /**
